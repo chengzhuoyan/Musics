@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_blackground"
+    android:orientation="vertical"
+    android:weightSum="8"
+    tools:context="com.bwie.vidio.modle.view.activity.PlayActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/needle"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backlast"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:src="@drawable/ic_arrow_down" />
+
+        <TextView
+            android:id="@+id/showtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="无音乐"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lin22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5">
+
+        <ImageView
+            android:id="@+id/disc2"
+            android:layout_width="240dp"
+            android:layout_height="250dp"
+            android:layout_alignTop="@+id/needle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="155dp"
+            android:src="@drawable/play_page_default_cover" />
+
+        <ImageView
+            android:id="@+id/disc"
+            android:layout_width="360dp"
+            android:layout_height="360dp"
+            android:layout_alignTop="@+id/needle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/ic_disc" />
+
+        <ImageView
+            android:id="@+id/needle"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="105dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_needle" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/tv_current_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/play_time_start"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <com.bwie.vidio.modle.view.customview.LrcView
+            android:id="@+id/lrcView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <SeekBar
+            android:id="@+id/sb_progress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxHeight="2dp"
+            android:minHeight="2dp"
+            android:progressDrawable="@drawable/seek_bar_progress_style"
+            android:thumb="@drawable/ic_seek_bar_progress_btn" />
+
+        <TextView
+            android:id="@+id/tv_total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/play_time_start"
+            android:textColor="@color/white_50p"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+
+        <ImageView
+            android:id="@+id/iv_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:layout_weight="1"
+            android:src="@drawable/play_mode_level_list" />
+
+        <LinearLayout
+            android:id="@+id/sss"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/playing_pre"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_last" />
+
+            <ImageView
+                android:id="@+id/playing_play"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_play" />
+
+            <ImageView
+                android:id="@+id/playing_next"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_next" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

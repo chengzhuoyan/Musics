@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:onClick="playingLin"
+            android:id="@+id/playing_lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/default_cover"
+            android:id="@+id/playing_img" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="无音乐"
+                android:id="@+id/playing_title" />
+    </LinearLayout>
+        <ImageView
+            android:id="@+id/play_ctrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:src="@drawable/play_video"/>
+        <ImageView
+            android:id="@+id/next_song"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_play_bar_btn_next"/>
+    </LinearLayout>
+    <SeekBar
+        android:id="@+id/pro_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

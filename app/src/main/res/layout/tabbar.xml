@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/slidingmenu_top"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#f44336"></RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/gongneng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/slidingmenu_img1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/a" />
+
+            <TextView
+                android:id="@+id/slidingmenu_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="功能设置" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/yejian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/slidingmenu_img2"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/b" />
+
+            <TextView
+                android:id="@+id/slidingmenu_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="夜间模式" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dingshi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/slidingmenu_img3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/c" />
+
+            <TextView
+                android:id="@+id/slidingmenu_title3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="定时停止音乐" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tuichu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/slidingmenu_img4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/d" />
+
+            <TextView
+                android:id="@+id/slidingmenu_title4"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="退出应用" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gunyu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/slidingmenu_img5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/e" />
+
+            <TextView
+                android:id="@+id/slidingmenu_title5"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="关于波尼音乐" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
